@@ -1,0 +1,9 @@
+<h1>Servicios</h1>
+<ol>
+    {% for service in list_services  %}
+    <li>
+        <a href="{% url "hojas:service_detail" service.id %}">{{service.company_name}}</a>
+    </li>
+    {% endfor %}
+    
+</ol>
