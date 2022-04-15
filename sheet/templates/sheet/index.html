@@ -1,9 +1,41 @@
-<h1>Servicios</h1>
-<ol>
-    {% for service in list_services  %}
-    <li>
-        <a href="{% url "hojas:service_detail" service.id %}">{{service.company_name}}</a>
-    </li>
-    {% endfor %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RyR Install</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static "sheet/style.css"%}">
+</head>
+<body>
+    <header class="header">
+        <ul class ="header__listItems">
+            <li class="header__buttonHome">
+                <a href="#">Home</a>
+            </li>
+            <li class="header__buttonIngresarServicios">
+                <a href="#">Ingresar Servicio</a>
+            </li>
+            <li class="header__buttonVerFacturas">
+                <a href="#">Ver Facturas</a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="services_area">
+            <div class="overlay">
+                <a href="#" class="title" style="text-decoration: none;">Servicios</a>
+            </div>
+        </section>
+        
     
-</ol>
+        <section class="bills_area">
+            <div class="overlay2">
+                <a href="#"class="title2" style="text-decoration: none;">Facturas</a>
+            </div>
+        </section>
+    </main>
+    
+</body>
+</html>
+

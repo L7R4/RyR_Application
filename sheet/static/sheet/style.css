@@ -1,0 +1,128 @@
+html{
+    font-size: 62.5%;
+    height: 100vh;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: inherit;
+    background-color: #262323;
+}
+
+main{
+    box-sizing:border-box;
+    margin: 0 6rem;
+    display: flex;
+    justify-content: center;
+    width: auto;
+    height: 92%; 
+    padding:0.2rem 0;
+}
+
+
+.header{
+    width: 100%;
+    height: 8%;
+    background-color: #f7642ee4;
+    position: relative;
+}
+
+.header__listItems{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: end;
+    height: 100%;
+}
+.header__listItems li{
+    margin-right: 4rem;
+}
+.header__buttonHome{
+    position: absolute;
+    left: 5rem;
+}
+
+.header__listItems li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.6rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.services_area{
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("images/sevice_image.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #74491a72;
+}
+
+.services_area:hover .overlay {
+    opacity: 1;
+}
+.title{
+    color: white;
+    font-size:4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+.bills_area{
+    width: 49%;
+    height: 100%;
+    overflow: hidden;
+    background-image: url("images/bills_image.jpg"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    position: relative;
+
+}
+.bills_area:hover .overlay2 {
+    opacity: 1;
+}
+.overlay2 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #38741adf;
+}
+.title2{
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
