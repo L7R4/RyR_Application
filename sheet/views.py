@@ -1,16 +1,16 @@
 from django.shortcuts import render
-from django.views import generic
+from django.views import View, generic
 from .models import Service
 
 
-class IndexView(generic.ListView):
-    template_name = "sheet/index.html"
+def index(request):
+    return render(request,"sheet/index.html")
+    
+
+class ServiceView(generic.ListView):
+    template_name = "sheet/services.html"
     context_object_name = "list_services"
 
     def get_queryset(self):
         return Service.objects.all()
-
-class DetailServiceView(generic.DetailView):
-    model = Service
-    template_name = "sheet/detail_service.html"
 
