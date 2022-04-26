@@ -23,7 +23,24 @@
     </header>
     <div class="container">
         <aside class="filter_nav">
-
+            <form action="#" method ="GET">
+                <label for="pick_folder">Carpeta:</label>
+                <select name="pick_folder" id="pick_folder">
+                    <option value="destiempo">Destiempo</option>
+                    <option value="aTiempo">A tiempo</option>
+                </select>
+                <br>
+                <label for="time">Tiempo</label>
+                <select name="time" id="time">
+                    <option value="esta_semana">Esta semana</option>
+                    <option value="este_mes">Este mes</option>
+                </select> 
+                
+                <input type="text" name="hola">
+                
+                <input type="submit">
+                
+            </form>
         </aside>
         <section class="files-list">
             {% for  service in list_services %}
