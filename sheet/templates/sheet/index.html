@@ -6,18 +6,22 @@
     <title>RyR Install</title>
     {% load static %}
     <link rel="stylesheet" href="{% static "sheet/style.css"%}">
+    <link rel="stylesheet" href="{% static "sheet/style_header.css"%}">
 </head>
 <body>
     <header class="header">
         <ul class ="header__listItems">
             <li class="header__buttonHome">
-                <a href="#">Home</a>
+                <a href="#">RYR INSTAL</a>
             </li>
             <li class="header__buttonIngresarServicios">
-                <a href="#">Ingresar Servicio</a>
+                <a href="{% url 'hojas:services_lists' %}">Ver servicios</a>
+            </li>
+            <li class="header__buttonIngresarServicios">
+                <a href="{% url 'hojas:add_service' %}">Ingresar Servicio</a>
             </li>
             <li class="header__buttonVerFacturas">
-                <a href="#">Ver Facturas</a>
+                <a href="{% url 'hojas:bills_lists' %}">Ver Facturas</a>
             </li>
         </ul>
     </header>
@@ -31,7 +35,7 @@
     
         <section class="bills_area">
             <div class="overlay2">
-                <a href="#"class="title2">Facturas</a>
+                <a href="{% url 'hojas:bills_lists' %}"class="title2">Facturas</a>
             </div>
         </section>
     </main>

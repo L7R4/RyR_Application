@@ -14,11 +14,12 @@
                 <a href="{% url 'hojas:index' %}">RYR INSTAL</a>
             </li>
             <li class="header__buttonIngresarServicios">
+                <a href="{% url 'hojas:services_lists' %}">Ver servicios</a>
+            </li>
+            <li class="header__buttonIngresarServicios">
                 <a href="#">Ingresar Servicio</a>
             </li>
-            <li class="header__buttonVerFacturas">
-                <a href="{% url 'hojas:bills_lists' %}">Ver Facturas</a>
-            </li>
+            
         </ul>
     </header>
     <div class="container">
@@ -46,7 +47,7 @@
             </form>
         </aside>
         <section class="files-list">
-            {% for  service in list_services %}
+            {% for  service in list_bills %}
                 <div class="file_container">
                     <a href=""><img src="../../static/sheet/images/pdf.svg" alt=""></a>
                 </div>
