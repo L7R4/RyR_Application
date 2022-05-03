@@ -6,28 +6,50 @@
     <title>RyR Install</title>
     {% load static %}
     <link rel="stylesheet" href="{% static "sheet/style.css"%}">
-    <link rel="stylesheet" href="{% static "sheet/style_header.css"%}">
+    {% comment %} <link rel="stylesheet" href="{% static "sheet/style_header.css"%}"> {% endcomment %}
 </head>
 <body>
     <div class="container">
         <header class="header">
-            <ul class ="header__listItems">
-                <li class="header__buttonHome">
-                    <a href="#">RYR INSTAL</a>
-                </li>
-                <li class="header__buttonIngresarServicios">
-                    <a href="{% url 'hojas:services_lists' %}">Ver servicios</a>
-                </li>
-                <li class="header__buttonIngresarServicios">
-                    <a href="{% url 'hojas:add_service' %}">Ingresar Servicio</a>
-                </li>
-                <li class="header__buttonVerFacturas">
-                    <a href="{% url 'hojas:bills_lists' %}">Ver Facturas</a>
-                </li>
-            </ul>
+             <a href="#">RYR INSTAL</a>
         </header>
         <aside>
-            <h4>nashe</h4>
+            <ul class="header__listItems">
+                <li>
+                    <i><img src="../static/sheet/images/martillo.svg" alt="" width="30px"></i>
+                    <a href="">Taller</a>
+                    <i><img src="../static/sheet/imagesflechaadministracion.svg" alt="" width="20px"></i>
+                </li>
+                <li>
+                    <i><img src="../static/sheet/images/administracion.svg" alt="" width="30px"></i>
+                    <a href="">Administracion</a>
+                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+                </li>
+                <li>
+                    <i><img src="../static/sheet/images/caja.svg" alt="" width="30px"></i>
+                    <a href="">Caja</a>
+                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+
+                </li>
+                <li>
+                    <i><img src="../static/sheet/images/inventario.svg" alt="" width="30px"></i>
+                    <a href="">inventario</a>
+                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+
+                </li>
+                <li>
+                    <i><img src="../static/sheet/images/contacto.svg" alt="" width="30px"></i>
+                    <a href="">Contactos</a>
+                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+
+                </li>
+                <li>
+                    <i><img src="../static/sheet/images/trabajador.svg" alt="" width="30px"></i>
+                    <a href="">Trabajadores</a>
+                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+
+                </li>
+            </ul>
         </aside>
         <main>
             <section class="services_area">
@@ -43,8 +65,8 @@
                 </div>
             </section>
             <section class="presupuesto_area">
-                <div class="overlay3">
-                    <a href="{% url 'hojas:bills_lists' %}"class="title3">Presupuestos</a>
+                <div class="overlay2">
+                    <a href="{% url 'hojas:bills_lists' %}"class="title2">Presupuestos</a>
                 </div>
             </section>
         </main>
