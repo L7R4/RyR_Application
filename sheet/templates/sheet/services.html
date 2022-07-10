@@ -31,17 +31,29 @@
                     <option value="aTiempo">A tiempo</option>
                 </select>
                 <br>
-                <label for="time">Tiempo</label>
+                <label for="">Tiempo</label>
                 <select name="time" id="time">
-                    <option value="sin_filtros">Sin filtro</option>
-                    <option value="last_week">Esta semana</option>
-                    <option value="this_month">Este mes</option>
+                    {%if time == "sin_filtros"%}
+                        <option value="sin_filtros" selected> Sin filtro</option>
+                    {%else%}
+                        <option value="sin_filtros"> Sin filtro</option>
+                    {%endif%}
+                    {%if time == "last_week"%}
+                        <option value="last_week" selected> Esta semana</option>
+                    {%else%}
+                        <option value="last_week"> Esta semana</option>
+                    {%endif%}
+                    {%if time == "this_month"%}
+                        <option value="this_month" selected> Este mes</option>
+                    {%else%}
+                        <option value="this_month"> Este mes</option>
+                    {%endif%}
                 </select>
                 <h2>Facturado</h2>
-                <input type="radio" name= "nashe" ><br>
+                <input type="radio" name= "nashe"><br>
                 <input type="submit" value="Acceder">
 
-                <button>INgrese el servicio</button>
+                <button>Ingrese el servicio</button>
                 
             </form>
         </aside>

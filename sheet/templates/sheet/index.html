@@ -6,7 +6,11 @@
     <title>RyR Install</title>
     {% load static %}
     <link rel="stylesheet" href="{% static "sheet/style.css"%}">
-    {% comment %} <link rel="stylesheet" href="{% static "sheet/style_header.css"%}"> {% endcomment %}
+    {% comment %} <link rel="stylesheet" href="{%static "sheet/estilos.css"%}"> {% endcomment %}
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="Last-Modified" content="0">
+    <meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+    <meta http-equiv="Pragma" content="no-cache">
 </head>
 <body>
     <div class="container">
@@ -14,42 +18,116 @@
              <a href="#">RYR INSTAL</a>
         </header>
         <aside>
-            <ul class="header__listItems">
-                <li>
-                    <i><img src="../static/sheet/images/martillo.svg" alt="" width="30px"></i>
-                    <a href="">Taller</a>
-                    <i><img src="../static/sheet/imagesflechaadministracion.svg" alt="" width="20px"></i>
-                </li>
-                <li>
-                    <i><img src="../static/sheet/images/administracion.svg" alt="" width="30px"></i>
-                    <a href="">Administracion</a>
-                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
-                </li>
-                <li>
-                    <i><img src="../static/sheet/images/caja.svg" alt="" width="30px"></i>
-                    <a href="">Caja</a>
-                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+            <nav class="nav">
+                <ul class="list">
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="../static/sheet/images/dashboard.svg" class="list__img">
+                            <a href="#" class="nav__link">Taller</a>
+                            <img src="../static/sheet/images/arrow.svg" class="list__arrow">
+                        </div>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Calendario</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Equipos</a>
+                            </li>
+                        </ul>
+                    </li>
+                    
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="../static/sheet/images/docs.svg" class="list__img">
+                            <a href="#" class="nav__link">Caja</a>
+                            <img src="../static/sheet/images/arrow.svg" class="list__arrow">
+                        </div>
+            
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Estado de Caja</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Cierres</a>
+                            </li>
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Movimientos</a>
+                            </li>
+                        </ul>
+            
+                    </li>
+            
+            
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="../static/sheet/images/stats.svg" class="list__img">
+                            <a href="#" class="nav__link">Administracion</a>
+                            <img src="../static/sheet/images/arrow.svg" class="list__arrow">
+                        </div>
 
-                </li>
-                <li>
-                    <i><img src="../static/sheet/images/inventario.svg" alt="" width="30px"></i>
-                    <a href="">inventario</a>
-                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Ventas</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Compras</a>
+                            </li>
+            
+                            
+                        </ul>
+                    </li>
+            
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="../static/sheet/images/bell.svg" class="list__img">
+                            <a href="#" class="nav__link">Inventario</a>
+                            <img src="../static/sheet/images/arrow.svg" class="list__arrow">
+                        </div>
+            
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Productos</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Servicios</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Categorias</a>
+                            </li>
+                        </ul>
+            
+                    </li>
+            
+            
+                    <li class="list__item list__item--click">
+                        <div class="list__button list__button--click">
+                            <img src="../static/sheet/images/message.svg" class="list__img">
+                            <a href="#" class="nav__link">Contacto</a>
+                            <img src="../static/sheet/images/arrow.svg" class="list__arrow">
+                        </div>
 
-                </li>
-                <li>
-                    <i><img src="../static/sheet/images/contacto.svg" alt="" width="30px"></i>
-                    <a href="">Contactos</a>
-                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
-
-                </li>
-                <li>
-                    <i><img src="../static/sheet/images/trabajador.svg" alt="" width="30px"></i>
-                    <a href="">Trabajadores</a>
-                    <i><img src="../static/sheet/images/flecha.svg" alt="" width="20px"></i>
-
-                </li>
-            </ul>
+                        <ul class="list__show">
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Clientes</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Proveedores</a>
+                            </li>
+            
+                            <li class="list__inside">
+                                <a href="#" class="nav__link nav__link--inside">Estoy dentro</a>
+                            </li>
+                        </ul>
+                    </li>
+            
+                </ul>
+            </nav>
         </aside>
         <main>
             <section class="services_area">
@@ -65,12 +143,13 @@
                 </div>
             </section>
             <section class="presupuesto_area">
-                <div class="overlay2">
+                <div class="overlay3">
                     <a href="{% url 'hojas:bills_lists' %}"class="title2">Presupuestos</a>
                 </div>
             </section>
         </main>
     </div>
+    <script src="../static/sheet/main.js"></script>
 </body>
 </html>
 

@@ -14,10 +14,14 @@ class ServiceView(generic.ListView):
     context_object_name = "list_services"
     # queryset = Service.objects.all()
 
-    def get_queryset(self) :
+    def dispatch(self, request, *args, **kwargs):
+        
+        return super().dispatch(request, *args, **kwargs)
+
+    def get_queryset(self):
         response_time=self.request.GET.get("time")
         response_pick_folder = self.request.GET.get("pick_folder")
-
+    
         today = date.today()
         day = today.day
         month = today.month
